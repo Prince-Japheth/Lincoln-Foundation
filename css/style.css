@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Yeseva+One&display=swap");
 
+
 body {
   /* font-family: "Yeseva One", cursive; */
   font-weight: normal;
@@ -116,7 +117,7 @@ h3 {
 .header-area .main-header-area {
   background: #DF1B22;
   border-radius: 20px;
-  padding: 10px 35px;
+  padding: 10px 0;
   position: absolute;
   bottom: -50px;
   z-index: 10 !important;
@@ -149,17 +150,7 @@ h3 {
   }
 }
 
-@media (max-width: 767px) {
-  .header-area .main-header-area .logo img {
-    width: 100px;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .header-area .main-header-area .logo img {
-    width: 100px;
-  }
-}
 
 .header-area .main-header-area .Appointment {
   display: -webkit-box;
@@ -230,7 +221,7 @@ h3 {
 
 .header-area .main-header-area .main-menu ul li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
@@ -429,6 +420,29 @@ h3 {
   }
 }
 
+
+nav ul {
+  margin: 0 !important;
+}
+
+nav ul li a {
+  text-transform: uppercase !important;
+}
+
+nav .boxed-btn:hover {
+  background-color: white !important;
+  color: #DF1B22 !important;
+}
+
+.logo {
+  width: fit-content !important;
+}
+
+.logo a img {
+  width: 180px;
+  border-radius: 10px;
+}
+
 .header-area .header-top-area .short-contact-list ul li {
   display: inline-block;
 }
@@ -564,7 +578,7 @@ h3 {
   padding: 5px;
   right: 0;
   margin-top: -5px;
-  top: -29px;
+  top: -40px;
   right: 7px;
 }
 
@@ -1387,3 +1401,91 @@ footer p {
 }
 
 /* About Bradcan End */
+
+
+/* Our Team Starts */
+.our_team_area .single_volenteer {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .our_team_area .single_volenteer {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our_team_area .single_volenteer {
+    margin-bottom: 30px;
+  }
+}
+
+.our_team_area .single_volenteer .volenteer_thumb {
+  padding-right: 70px;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 12;
+  overflow: hidden;
+}
+
+.our_team_area .single_volenteer .volenteer_thumb img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.our_team_area .single_volenteer .voolenteer_info {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  left: 40px;
+  top: 90px;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .info_inner {
+  padding: 20px 40px;
+  position: relative;
+  z-index: 100;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .info_inner h4 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .info_inner p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .social_links {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 30px;
+  z-index: 99;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .social_links ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .social_links ul li:last-child {
+  margin-bottom: 0;
+}
+
+.our_team_area .single_volenteer .voolenteer_info .social_links ul li a {
+  font-size: 16px;
+  color: #222222;
+}
+/* Our Team End */
