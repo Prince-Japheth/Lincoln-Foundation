@@ -103,14 +103,12 @@ h3 {
 }
 
 
-
 /* Header Start */
 .header-area {
   left: 0;
   right: 0;
   width: 100%;
   top: 0;
-  z-index: 9;
   padding: 0 100px 50px 100px;
 }
 
@@ -132,7 +130,7 @@ h3 {
   padding: 10px 0;
   position: absolute;
   bottom: -50px;
-  z-index: 10 !important;
+  z-index: 20 !important;
   left: 100px;
   top: 70px;
   bottom: auto;
