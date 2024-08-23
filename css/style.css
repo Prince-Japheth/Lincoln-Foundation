@@ -701,20 +701,15 @@ nav .boxed-btn:hover {
 }
 
 .boxed-btn {
-  color: #222222;
+  color: #DF1B22;
   display: inline-block;
   padding: 13px 44px;
   font-size: 16px;
   font-weight: 600;
-  border: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  border: 1px solid #DF1B22;
   border-radius: 5px;
   text-align: center;
   text-transform: capitalize;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   background: #fff;
   font-family: "Open Sans", sans-serif;
@@ -1510,3 +1505,238 @@ footer p {
 }
 
 /* Our Team End */
+
+@media (min-width: 768px) {
+  .news_details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.news-info-link li {
+  float: left;
+  font-size: 14px;
+}
+
+.news-info-link li a {
+  color: #999999;
+}
+
+.news-info-link li i,
+.news-info-link li span {
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.news-info-link li::after {
+  content: "|";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.news-info-link li:last-child::after {
+  display: none;
+}
+
+.news-info-link::after {
+  content: "";
+  display: block;
+  clear: both;
+  display: table;
+}
+
+.single-post-area .quote-wrapper {
+  background: rgba(130, 139, 178, 0.1);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .single-post-area .quote-wrapper {
+    padding: 30px;
+  }
+} 
+
+.single-post-area .quotes {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+  border-left: 2px solid;
+}
+
+@media (min-width: 768px) {
+  .single-post-area .quotes {
+    padding: 25px 25px 25px 30px;
+  }
+}
+
+.single-post-area .navigation-top .comment-count {
+  font-size: 14px;
+}
+
+.single-post-area .navigation-top .comment-count i,
+.single-post-area .navigation-top .comment-count span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.comments-area {
+  background: transparent;
+  border-top: 1px solid #eee;
+  padding: 45px 0;
+  margin-top: 50px;
+}
+
+@media (max-width: 414px) {
+  .comments-area {
+    padding: 50px 8px;
+  }
+}
+
+.comments-area h4 {
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.comments-area h5 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.comments-area .comment-list {
+  padding-bottom: 48px;
+}
+
+.comments-area .comment-list:last-child {
+  padding-bottom: 0px;
+}
+
+.comments-area .comment-list.left-padding {
+  padding-left: 25px;
+}
+
+@media (max-width: 413px) {
+  .comments-area .comment-list .single-comment h5 {
+    font-size: 12px;
+  }
+
+  .comments-area .comment-list .single-comment .date {
+    font-size: 11px;
+  }
+
+  .comments-area .comment-list .single-comment .comment {
+    font-size: 10px;
+  }
+}
+
+.comments-area .thumb {
+  margin-right: 20px;
+}
+
+.comments-area .thumb img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.comments-area .date {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.comments-area .comment {
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 15px;
+}
+
+
+.comment-form {
+  border-top: 1px solid #eee;
+  padding-top: 45px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.comment-form .form-group {
+  margin-bottom: 30px;
+}
+
+.comment-form h4 {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.comment-form .name {
+  padding-left: 0px;
+}
+
+@media (max-width: 767px) {
+  .comment-form .name {
+    padding-right: 0px;
+    margin-bottom: 1rem;
+  }
+}
+
+.comment-form .email {
+  padding-right: 0px;
+}
+
+@media (max-width: 991px) {
+  .comment-form .email {
+    padding-left: 0px;
+  }
+}
+
+.comment-form .form-control {
+  border: 1px solid #f0e9ff;
+  border-radius: 5px;
+  height: 48px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
+}
+
+.comment-form .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.comment-form .form-control::placeholder {
+  font-weight: 300;
+  color: #999999;
+}
+
+.comment-form .form-control::placeholder {
+  color: #777777;
+}
+
+.comment-form textarea {
+  padding-top: 18px;
+  border-radius: 12px;
+  height: 100% !important;
+}
+
+.comment-form ::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #777;
+}
+
+.comment-form ::-moz-placeholder {
+  font-size: 13px;
+  color: #777;
+}
+
+.comment-form :-ms-input-placeholder {
+  font-size: 13px;
+  color: #777;
+}
+
+.comment-form :-moz-placeholder {
+  font-size: 13px;
+  color: #777;
+}
