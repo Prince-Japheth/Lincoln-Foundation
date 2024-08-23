@@ -61,8 +61,9 @@
     };
   });
 
+
   // news.html pagination
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const newsItems = document.querySelectorAll('.single-news');
     const itemsPerPage = 6;
     const totalPages = Math.ceil(newsItems.length / itemsPerPage);
@@ -71,11 +72,15 @@
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const pageNumbers = document.getElementById('pageNumbers');
+    const newsHeading = document.getElementById('news-heading');
 
     function showPage(page) {
         newsItems.forEach((item, index) => {
             item.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? 'block' : 'none';
         });
+
+        // Scroll to the news-heading element after updating the page
+        newsHeading.scrollIntoView({ behavior: 'smooth' });
     }
 
     function updatePagination() {
@@ -114,5 +119,6 @@
 
     updatePagination(); // Initial call to set up the page
 });
+
 
 })(jQuery);	
