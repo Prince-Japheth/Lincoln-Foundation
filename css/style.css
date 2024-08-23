@@ -1081,7 +1081,7 @@ nav .boxed-btn:hover {
   background-color: #DF1B22;
   padding: 15px 20px;
   border-radius: 7px;
-  z-index: 100000;
+  z-index: 10;
 }
 
 .news-item-date p, .news-item-date h3 {
