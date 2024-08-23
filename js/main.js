@@ -61,7 +61,7 @@
     };
   });
 
-  
+  // news.html pagination
   document.addEventListener('DOMContentLoaded', function() {
     const newsItems = document.querySelectorAll('.single-news');
     const itemsPerPage = 6;
