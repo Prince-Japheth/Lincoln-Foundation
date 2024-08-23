@@ -1424,7 +1424,7 @@ footer p {
   padding-right: 70px;
   padding-bottom: 90px;
   position: relative;
-  z-index: 12;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -1449,7 +1449,7 @@ footer p {
 .our_team_area .single_volenteer .voolenteer_info .info_inner {
   padding: 20px 40px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 
 .our_team_area .single_volenteer .voolenteer_info .info_inner h4 {
@@ -1472,7 +1472,7 @@ footer p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 30px;
-  z-index: 99;
+  z-index: 1;
 }
 
 .our_team_area .single_volenteer .voolenteer_info .social_links ul li {
