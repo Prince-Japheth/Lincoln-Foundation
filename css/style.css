@@ -130,7 +130,7 @@ h3 {
   padding: 10px 0;
   position: absolute;
   bottom: -50px;
-  z-index: 20 !important;
+  z-index: 100 !important;
   left: 100px;
   top: 70px;
   bottom: auto;
@@ -455,17 +455,21 @@ nav .boxed-btn:hover {
   float: right;
   margin-top: 0;
   padding: 0;
+  padding-top: 10px !important;
   width: 100%;
   padding: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-radius: 5px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   top: 10px;
   border-bottom: 1px solid #DF1B22;
+  z-index: 0;
 }
+
 
 @media (max-width: 767px) {
   .slicknav_menu .slicknav_nav a i {
