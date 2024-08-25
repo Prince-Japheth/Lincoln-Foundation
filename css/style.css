@@ -102,6 +102,45 @@ h3 {
   font-size: 24px;
 }
 
+.mobile-br {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin-bottom: 200px;
+}
+
+
+@media (max-width: 768px) {
+  .mobile-br {
+      margin-bottom: 100px;
+  }
+
+  .mv-img {
+      width: 100% !important;
+      height: 100%;
+      margin-bottom: 30px;
+  }
+}
+
+.section_padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .section_padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section_padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 
 /* Header Start */
 .header-area {
@@ -127,7 +166,6 @@ h3 {
 .header-area .main-header-area {
   background: #DF1B22;
   border-radius: 20px;
-  padding: 10px 0;
   position: absolute;
   bottom: -50px;
   z-index: 100 !important;
@@ -411,6 +449,9 @@ nav ul li a {
   text-transform: uppercase !important;
 }
 
+nav .boxed-btn {
+  border-radius: 10px !important;
+}
 nav .boxed-btn:hover {
   background-color: white !important;
   color: #DF1B22 !important;
@@ -1739,3 +1780,141 @@ footer p {
 .contact-section .btn_2:hover {
   background-color: #ff5e13;
 }
+
+
+/* DOnation Form */
+
+.donation-form {
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px 40px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.donation-form form {
+    margin: auto;
+    max-width: 600px;
+}
+
+.donation-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.donation-form input,
+.donation-form textarea,
+.donation-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.donation-form input:focus,
+.donation-form textarea:focus,
+.donation-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.donation-form button {
+    background-color: #df1b22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif;
+}
+
+.donation-form button:hover {
+    filter: brightness(85%);
+}
+
+.donation-form ::placeholder {
+    font-family: inherit;
+    opacity: 0.7;
+}
+
+.donation-form input[type='checkbox'] {
+    margin-right: 8px;
+    width: auto;
+}
+
+.donation-form fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.donation-form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.donation-form input[type='radio'] {
+    margin-right: 8px;
+    margin-top: 4px;
+    width: auto;
+    cursor: pointer;
+}
+
+.donation-form .radio-label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.donation-form .radio-group {
+    margin-bottom: 16px;
+}
+
+.donation-form .donation-type {
+    margin-bottom: 16px;
+}
+
+.donation-form .donation-type span {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.donation-form input[type='number'] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.donation-form input[type='number']::-webkit-inner-spin-button,
+.donation-form input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.donation-form .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.donation-form .form-check-input {
+    margin-top: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.donation-form .form-check-label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* ////////// */
