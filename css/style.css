@@ -149,7 +149,7 @@ h3 {
   width: 100%;
   top: 0;
   padding: 0 100px 50px 100px;
-  background-color: #df1b22;
+  background-color: white;
 }
 
 @media (max-width: 767px) {
@@ -165,7 +165,7 @@ h3 {
 }
 
 .header-area .main-header-area {
-  background: white;
+  background: #df1b22;
   border-radius: 20px;
   position: absolute;
   bottom: -50px;
@@ -248,7 +248,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li a {
-  color: black;
+  color: white;
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 600;
@@ -262,13 +262,13 @@ h3 {
 
 
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #df1b22 !important;
+  color: white !important;
 }
 
 .header-area .main-header-area .main-menu ul li a::before {
   content: "";
   position: absolute;
-  background-color: #df1b22;
+  background-color: white;
   width: 0;
   /* Start with 0 width */
   height: 2px;
@@ -376,7 +376,7 @@ h3 {
   z-index: 999;
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
-  background: #fffffffb;
+  background: #df1b22;
   backdrop-filter: blur(5px);
   bottom: auto;
   border-radius: 0 !important;
@@ -474,7 +474,7 @@ nav .boxed-btn:hover {
 
 .header-area .header-top-area .short-contact-list ul li a {
   font-size: 16px;
-  color: white;
+  color: #0e1214;
   margin-right: 40px;
   font-family: "Open Sans", sans-serif;
 }
@@ -661,7 +661,7 @@ nav .boxed-btn:hover {
   padding: 13px 44px;
   font-size: 16px;
   font-weight: 600;
-  border: 1px solid #DF1B22;
+  /* border: 1px solid #DF1B22; */
   border-radius: 5px;
   text-align: center;
   text-transform: capitalize;
