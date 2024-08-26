@@ -385,7 +385,7 @@ h3 {
 
 @media (max-width: 767px) {
   .header-area .main-header-area.sticky {
-    padding: 10px 10px;
+    padding-top: 16px !important;
   }
 }
 
