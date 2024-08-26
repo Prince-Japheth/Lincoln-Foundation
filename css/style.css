@@ -110,7 +110,7 @@ h3 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .mobile-br {
       margin-bottom: 100px;
   }
@@ -1228,6 +1228,10 @@ footer p {
   color: white;
   padding-bottom: 0px;
   margin-bottom: 8px;
+}
+
+footer p a {
+  color: white !important;
 }
 
 .mb10 {
