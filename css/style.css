@@ -149,6 +149,7 @@ h3 {
   width: 100%;
   top: 0;
   padding: 0 100px 50px 100px;
+  background-color: #df1b22;
 }
 
 @media (max-width: 767px) {
@@ -164,16 +165,12 @@ h3 {
 }
 
 .header-area .main-header-area {
-  background: #DF1B22;
+  background: white;
   border-radius: 20px;
   position: absolute;
-  bottom: -50px;
-  padding: 8px 0;
   z-index: 100 !important;
-  left: 100px;
   top: 70px;
   bottom: auto;
-  right: 100px;
 }
 
 @media (max-width: 767px) {
@@ -375,7 +372,7 @@ h3 {
   z-index: 999;
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
-  background: #df1b22db;
+  background: rgba(255, 255, 255, 0.76);
   backdrop-filter: blur(5px);
   bottom: auto;
   border-radius: 0 !important;
@@ -473,7 +470,7 @@ nav .boxed-btn:hover {
 
 .header-area .header-top-area .short-contact-list ul li a {
   font-size: 16px;
-  color: #222222;
+  color: white;
   margin-right: 40px;
   font-family: "Open Sans", sans-serif;
 }
@@ -493,7 +490,7 @@ nav .boxed-btn:hover {
 
 .slicknav_menu .slicknav_nav {
   background: #fffffffb;
-  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
   float: right;
   margin-top: 0;
   padding: 0;
@@ -550,10 +547,6 @@ nav .boxed-btn:hover {
   top: -9px;
 }
 
-
-.slicknav_icon-bar {
-  background: #fff !important;
-}
 
 /* Header End */
 
