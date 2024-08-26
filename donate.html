@@ -136,16 +136,22 @@
             </div>
             <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
         </div>
-        <div class="donation-form col-12 col-md-6">
+
+        <div class="donation-form col-12 col-lg-6">
             <form action="" method="POST">
                 <label for="donorName">Donor Name:</label>
                 <input type="text" id="donorName" name="donorName" placeholder="Your Full Name">
+
+                <div class="d-flex mb-4 align-items-center gap-2">
+                    <input type="checkbox" id="anonymousDonor" name="" value="" class="p-0 m-0">
+                    <label for="anonymousDonor" class="m-0 p-0">Make this an anonymous donation</label>
+                </div>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email">
 
                 <label for="donationAmount">Donation Amount:</label>
-                <input type="number" id="donationAmount" name="donationAmount" placeholder="Amount in USD" min="1">
+                <input type="number" id="donationAmount" name="donationAmount" placeholder="Amount in NGN" min="1">
 
                 <label for="message">Message (Optional):</label>
                 <textarea id="message" name="message" placeholder="Leave a message"></textarea>
@@ -163,8 +169,17 @@
                 <button type="submit">Donate Now</button>
             </form>
         </div>
-        <div class="col-12 col-md-6">
 
+        <div class="col-12 col-lg-6">
+            <div class="d-flex flex-column gap-1 align-items-center pt-5">
+                <h3>
+                    Direct Bank Transfer
+                </h3>
+                <p>Account Name: Lorem Ipsum Dolor</p>
+                <p>Account Number: 12345678</p>
+                <p>Bank Name: Lorem</p>
+
+            </div>
         </div>
     </section>
 
