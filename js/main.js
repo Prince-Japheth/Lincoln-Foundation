@@ -1,4 +1,10 @@
+var loader = document.getElementById("preloader");
+window.onload = function () {
+  loader.style.display = "none";
+};
+
 (function ($) {
+
   "use strict";
   // TOP Menu Sticky
   $(window).on('scroll', function () {
@@ -63,7 +69,7 @@
 
 
   // news.html pagination
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const newsItems = document.querySelectorAll('.single-news');
     const itemsPerPage = 6;
     const totalPages = Math.ceil(newsItems.length / itemsPerPage);
@@ -75,50 +81,50 @@ document.addEventListener('DOMContentLoaded', function() {
     const newsHeading = document.getElementById('news-heading');
 
     function showPage(page) {
-        newsItems.forEach((item, index) => {
-            item.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? 'block' : 'none';
-        });
+      newsItems.forEach((item, index) => {
+        item.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? 'block' : 'none';
+      });
 
-        // Scroll to the news-heading element after updating the page
-        newsHeading.scrollIntoView({ behavior: 'smooth' });
+      // Scroll to the news-heading element after updating the page
+      newsHeading.scrollIntoView({ behavior: 'smooth' });
     }
 
     function updatePagination() {
-        showPage(currentPage);
+      showPage(currentPage);
 
-        prevBtn.disabled = currentPage === 1;
-        nextBtn.disabled = currentPage === totalPages;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
 
-        pageNumbers.innerHTML = '';
-        for (let i = 1; i <= totalPages; i++) {
-            const pageNumber = document.createElement('button');
-            pageNumber.textContent = i;
-            pageNumber.className = 'btn btn-outline-primary mx-2 p-3 px-4';
-            pageNumber.disabled = (i === currentPage);
-            pageNumber.addEventListener('click', () => {
-                currentPage = i;
-                updatePagination();
-            });
-            pageNumbers.appendChild(pageNumber);
-        }
+      pageNumbers.innerHTML = '';
+      for (let i = 1; i <= totalPages; i++) {
+        const pageNumber = document.createElement('button');
+        pageNumber.textContent = i;
+        pageNumber.className = 'btn btn-outline-primary mx-2 p-3 px-4';
+        pageNumber.disabled = (i === currentPage);
+        pageNumber.addEventListener('click', () => {
+          currentPage = i;
+          updatePagination();
+        });
+        pageNumbers.appendChild(pageNumber);
+      }
     }
 
     prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            updatePagination();
-        }
+      if (currentPage > 1) {
+        currentPage--;
+        updatePagination();
+      }
     });
 
     nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            updatePagination();
-        }
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePagination();
+      }
     });
 
     updatePagination(); // Initial call to set up the page
-});
+  });
 
 
 })(jQuery);	
