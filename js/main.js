@@ -16,8 +16,8 @@
   // Counter Js
   document.addEventListener('DOMContentLoaded', function () {
     var counter1 = new CountUp('counter1', 120);
-    var counter2 = new CountUp('counter2', 120);
-    var counter3 = new CountUp('counter3', 120);
+    var counter2 = new CountUp('counter2', 320);
+    var counter3 = new CountUp('counter3', 140);
     var counter4 = new CountUp('counter4', 100);
 
     // Start the count-up animations
