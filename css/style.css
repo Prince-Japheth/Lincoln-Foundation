@@ -526,18 +526,7 @@ nav .boxed-btn:hover {
   }
 }
 
-.slicknav_menu .slicknav_nav .slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  margin-top: -40px;
-  position: relative;
-  z-index: 99;
-  border: 1px solid #ddd;
-  top: 3px;
-  right: 5px;
-  top: -36px;
-}
+
 
 .slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
   margin-right: 6px;
@@ -561,54 +550,9 @@ nav .boxed-btn:hover {
   top: -9px;
 }
 
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 5px;
-  margin-top: -5px;
-  top: -31px;
-}
-
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 0;
-  margin-top: -5px;
-  top: -24px;
-}
 
 .slicknav_icon-bar {
   background: #fff !important;
-}
-
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 0;
-  margin-top: -5px;
-  top: -40px;
-  right: 7px;
 }
 
 /* Header End */

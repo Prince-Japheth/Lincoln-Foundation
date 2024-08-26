@@ -284,11 +284,10 @@
   z-index: 99;
   border: none;
   border-radius: 3px;
-  top: 5px;
   padding: 5px;
   right: 5px;
   margin-top: -5px;
-  top: -36px;
+  top: -45px;
 }
 
 .slicknav_menu .slicknav_icon {
