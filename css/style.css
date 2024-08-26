@@ -168,6 +168,7 @@ h3 {
   border-radius: 20px;
   position: absolute;
   bottom: -50px;
+  padding: 8px 0;
   z-index: 100 !important;
   left: 100px;
   top: 70px;
