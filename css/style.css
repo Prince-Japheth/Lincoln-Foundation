@@ -299,7 +299,6 @@ h3 {
   background: #df1b22;
   border-radius: 20px;
   position: absolute;
-  bottom: -50px;
   padding: 8px 0;
   z-index: 100 !important;
   left: 90px;
@@ -312,7 +311,7 @@ h3 {
   .header-area .main-header-area {
     right: 15px;
     left: 15px;
-    padding: 12px 0;
+    /* padding: 12px 0; */
   }
 }
 
@@ -320,7 +319,6 @@ h3 {
   .header-area .main-header-area {
     right: 15px;
     left: 15px;
-    padding: 12px 0;
   }
 }
 
@@ -416,14 +414,14 @@ h3 {
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
+  .header-area .main-header-area .main-menu ul li a, nav .boxed-btn {
+    font-size: 11px;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
-  .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
+  .header-area .main-header-area .main-menu ul li a, nav .boxed-btn {
+    font-size: 11px;
   }
 }
 
@@ -487,6 +485,49 @@ h3 {
   visibility: visible;
   /* top: 150%; */
 }
+
+/* subsubmenu */
+.header-area .main-header-area .main-menu ul li .subsubmenu {
+  position: absolute;
+  left: 245px;
+  top: 0;
+  background: #ffffffd9;
+  width: 250px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.403);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  transition: 0.6s;
+  border-bottom: 3px solid #DF1B22;
+}
+
+.header-area .main-header-area .main-menu ul li .subsubmenu li {
+  display: block;
+}
+
+.header-area .main-header-area .main-menu ul li .subsubmenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  transition: 0.3s;
+  display: block;
+  color: #0e1214 !important;
+}
+
+.header-area .main-header-area .main-menu ul li .subsubmenu li a::before {
+  display: none;
+}
+
+.header-area .main-header-area .main-menu ul li .subsubmenu li:hover a {
+  color: #DF1B22;
+}
+
+.header-area .main-header-area .main-menu ul li:hover>.subsubmenu {
+  opacity: 1;
+  visibility: visible;
+  /* top: 150%; */
+}
+/* ////////////// */
 
 .header-area .main-header-area .main-menu ul li:hover>a::before {
   opacity: 1;
